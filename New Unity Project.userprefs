@@ -1,11 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/script/arv.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/script/camControler.cs">
     <Files>
+      <File FileName="Assets/script/camControler.cs" Line="18" Column="1" />
       <File FileName="Assets/script/arv.cs" Line="1" Column="1" />
       <File FileName="Assets/script/rotasion.cs" Line="1" Column="1" />
-      <File FileName="Assets/script/camControler.cs" Line="1" Column="1" />
-      <File FileName="Assets/script/playerControll.cs" Line="1" Column="1" />
+      <File FileName="Assets/script/killzone.cs" Line="19" Column="28" />
+      <File FileName="Assets/script/playerControll.cs" Line="67" Column="42" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

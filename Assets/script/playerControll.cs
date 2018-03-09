@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class playerControll : MonoBehaviour{
 
+	float HpMax = 3;
+	float CurentHp;
+	float Test = 1;
+
 	public Rigidbody rb;
 	public float speed;
 	public int forceConst = 50;
@@ -22,7 +26,7 @@ public class playerControll : MonoBehaviour{
 		
 	void  Update ()
 	{
-
+		
 		float MoveHorizontal = Input.GetAxis ("Horizontal"); 
 		float moveVertical = Input.GetAxis ("Vertical");  
 	
@@ -51,6 +55,22 @@ public class playerControll : MonoBehaviour{
 		    
 
 	}//END OnTriggerEnter()
+	void OnCollisionEnter(Collision Obsticol ){
+
+		if (Obsticol.gameObject.tag == "Obsticol") {
+			
+			HpMax--;  
+
+			CurentHp = HpMax; 
+			}
+		if (HpMax == 0){
+			Application.LoadLevel ("roll a ball");
+
+		}
+	
+	}
+
+
 
 }
 

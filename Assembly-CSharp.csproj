@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{B2B58FB2-4462-6B0C-A872-40DD957E5FE0}</ProjectGuid>
+    <ProjectGuid>{1E415D73-26A0-F1E0-9FFF-31B12CA61008}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -54,11 +54,12 @@
      <Compile Include="Assets\script\arv.cs" />
      <Compile Include="Assets\script\camControler.cs" />
      <Compile Include="Assets\script\coletibols.cs" />
+     <Compile Include="Assets\script\killzone.cs" />
      <Compile Include="Assets\script\playerControll.cs" />
      <Compile Include="Assets\script\Points.cs" />
      <Compile Include="Assets\script\rotasion.cs" />
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>/Users/dempa/New Unity Project/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ <HintPath>/Users/dempa/GitHub/idk/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
