@@ -16,7 +16,7 @@ public class killzone : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other) {
 
-		if (other.name == "Sphere") {
+		if (other.gameObject.name == "Boatv2") {
 			Application.LoadLevel ("roll a ball");
 		} else {
 			Destroy (other.gameObject);

@@ -55,6 +55,7 @@
      <Compile Include="Assets\script\camControler.cs" />
      <Compile Include="Assets\script\coletibols.cs" />
      <Compile Include="Assets\script\killzone.cs" />
+     <Compile Include="Assets\script\oderkoletibol.cs" />
      <Compile Include="Assets\script\playerControll.cs" />
      <Compile Include="Assets\script\Points.cs" />
      <Compile Include="Assets\script\rotasion.cs" />

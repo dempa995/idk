@@ -30,9 +30,14 @@ public class playerControll : MonoBehaviour{
 		float MoveHorizontal = Input.GetAxis ("Horizontal"); 
 		float moveVertical = Input.GetAxis ("Vertical");  
 	
-		Vector3 movment = new Vector3 (MoveHorizontal, 0.0f, moveVertical);
+		Vector3 movment = new Vector3 (MoveHorizontal, 0, moveVertical);
 		rb.AddForce (movment * speed * Time.deltaTime);
-		if (Input.GetKeyUp (KeyCode.Space)) {
+
+		if (Input.GetKeyDown (KeyCode.Escape)) {
+			Application.Quit ();
+		}
+
+		/*if (Input.GetKeyUp (KeyCode.Space)) {
 			canJump = true;
 		}
 
@@ -40,7 +45,7 @@ public class playerControll : MonoBehaviour{
 			canJump = false;
 			rb.AddForce (0, forceConst, 0, ForceMode.Impulse);
 
-		}
+		}*/
 
 	}//END Update()	
 
@@ -58,11 +63,14 @@ public class playerControll : MonoBehaviour{
 	void OnCollisionEnter(Collision Obsticol ){
 
 		if (Obsticol.gameObject.tag == "Obsticol") {
-			
+
+			transform.position += new Vector3 (0, -0.7f, 0);
+
+
 			HpMax--;  
 
 			CurentHp = HpMax; 
-			}
+		}
 		if (HpMax == 0){
 			Application.LoadLevel ("roll a ball");
 
